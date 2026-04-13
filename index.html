@@ -1,336 +1,290 @@
 <!DOCTYPE html>
 <html>
+<head>
 <meta charset='UTF-8'/>
 <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
 <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Caveat&display=swap" rel="stylesheet">
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://hbdkamu.feeldream.repl.co/script.js"></script>
-  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><script src="https://htmlku.com/hbd/main.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
   <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
   
-<head>
-<title>happy birthday sayangku</title>
-<meta name="description" content="HTML Feeldream Repl Co">
-<!-- 
-  Made with love by Rayys!
-  
-     Blog: feeldream.id
-     Instagram: @rayyarrr
-     TikTok: @feelthisray
-     Email: rayyar73@gmail.com
-     
-  Thanks to all <3
--->
-</head>
+<title>Untuk Ayaaa Sayanggg</title>
 <style>
 :root {
---warna-bg: rgba(0, 0, 0, .3); 
---tombol-teks: #fff;
---tombol-bingkai: #fff;
---bingkai: 18px;
---bingkai-kiri: 1.3px solid var(--tombol-bingkai);
---bingkai-kanan: 1.3px solid var(--tombol-bingkai);
---gaya-font: 'Nunito Sans', sans-serif;
---gaya-font2: 'Caveat', cursive;
+  --warna-bg: rgba(0, 0, 0, .3); 
+  --tombol-teks: #fff;
+  --gaya-font: 'Nunito Sans', sans-serif;
+  --gaya-font2: 'Caveat', cursive;
 }
-@keyframes fanim {0% {background-position: 0% 0%;}25% {background-position: 100% 100%;} 50% {background-position: 0% 100%;} 75% {background-position: 50% 50%;} 100% {background-position: 0% 0%;}}
-body{background-color:#000;font-family:var(--gaya-font);padding: 20px 25px;-webkit-user-select: none; -ms-user-select: none; user-select: none;} a{text-decoration:none;}
-body::before{content:"\00A9  Rayys | feeldream.id";color:white;opacity:.3;font-size:10px;position:fixed;bottom:25px;right:25px;z-index:2}
-#bodyblur{animation: jj 7s infinite;opacity:.5;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);transition:all 1s ease;} 
-#wallpaper{width:100%;height:100%;transform: scale(1);transition:all 1.7s ease;}
-#beneranblur{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);transition:all 3s ease;}
 
-@keyframes jj{0%  {transform: scale(1);} 50% {transform: scale(1.3);} 100% {transform: scale(1);}}
-@keyframes rts{from {transform:scale(.1);} to {transform:scale(1);}}
-@keyframes rto{from {transform:scale(1);} to {transform:scale(1.1);}}
-@keyframes aniopa{0% {transform: scale(1);} 50% {transform: scale(.75);} 100% {transform: scale(1);}}
-@keyframes rtf{from {transform: rotate(0deg);} to {transform: rotate(360deg);}} @keyframes rt{from {transform: scale(.9);/* transform: rotate(-5deg); */} to {transform: scale(1);/* transform: rotate(5deg); */}}
-@keyframes kont{0%  {left:-1px; top:-3px;} 50% {left:1px; top:3px;} 100% {left:-1px; top:-3px;}}
+body {
+  background-color: #000;
+  font-family: var(--gaya-font);
+  padding: 20px 25px;
+  -webkit-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
 
-blockquote{position:absolute;opacity:0;visibility:hidden;/*background:var(--warna-bg);border: 1px solid rgba(255, 255, 255, 0.5);border-radius:var(--bingkai);box-shadow: rgba(255,255,255, 0.3) 0px 7px 29px 0px;*/transform: scale(.1);transition:all .7s ease;margin-left:0;margin-right:0;color:var(--tombol-teks);text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);/*backdrop-filter:blur(2px);*/}
-blockquote{width:400px;text-align:center;line-height:1.3em;padding:0}
-blockquote p{font-size:15px;font-weight:400;line-height:1.5em;transition:all .5s ease;margin-left:0;margin-right:0}
-blockquote p:not(#kalimat, #teksnim){display:none;}
-#teksnim, blockquote p span.ft{font-family:var(--gaya-font2);font-size:20px;font-weight:700}
-#teksnim{font-size:22px;position:absolute;opacity:0;transform:scale(0);transition:all .8s ease}
+#bodyblur {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,.3); transition: all 1s ease; z-index: -1;
+}
 
-#pergeseran{margin-top:40px;position:absolute;opacity:0;transform:scale(0);transition:all 1s ease;display:flex;flex-wrap:nowrap;align-items:flex-start;justify-content:flex-start;max-width:500px;padding:0 30px; overflow-y:hidden;overflow-x:hidden;scroll-behavior:smooth;scroll-snap-type:x mandatory; -ms-overflow-style:none;-webkit-overflow-scrolling:touch}
-#pergeseran p{background:rgba(0, 0, 0, .5);border-left:2px solid #fff;border-right:2px solid #fff; padding:15px;display:flex;flex-wrap:nowrap;text-align:center;line-height:1.4em;align-items:center;justify-content:center;flex-shrink:0; width:90%;margin:0 15px 0 0; scroll-snap-align:center}
-#pergeseran p, #psn{color:white;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);min-height:150px;}
-#pergeseran > *:last-child{margin-right:0} #pergeseran:after{content:'';display:block;flex-shrink:0; align-self:stretch;padding-left:20px}
-#pergeseran p b{display:block;}
-#pergeseran p b span{font-size:15px;font-weight:700;}
-#pergeseran p b span.ft{font-family:var(--gaya-font2);font-size:20px}
-#pergeseran p b img{width:80px;height:80px;margin-bottom:20px;}
-#fotolove{border-radius:50%;transition:all .3s ease;} #fotolove:hover{transform: scale(.8);}
-#pesanAkhir{margin-top:30px;font-family:var(--gaya-font3);font-size:22px !important;font-weight:400;text-align:center;position: absolute;opacity:0;}
+#wallpaper {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: brightness(0.5);
+}
 
-#Tombol{position:relative;opacity:0;margin-top:20px !important;display:flex;align-items:left;list-style:none;transform: scale(.1);transition:all .7s ease;}
-#Tombol a{cursor:pointer;display:inline-flex;align-items:center; margin:0;margin:12px 0 12px 0;transition:all .2s ease;padding:10px;outline:0;border-left:2px solid #fff;border-right:2px solid #fff; border-radius:0;line-height:15px;background:rgba(0,0,0,.5);color:white;font-size:12px;font-weight:400;white-space:nowrap;overflow:hidden;z-index:1} 
-#Tombol a:hover{transform: scale(.90);opacity:.98;}
+#Content {
+  opacity: 0; margin-top: 100px;
+  display: flex; flex-direction: column; align-items: center;
+  transition: all .7s ease;
+}
 
-#Content{animation-name:none;animation-duration: 3s;animation-iteration-count: infinite;position:relative;opacity:0;margin-top:50px;width:100%;height:180px;transition:all .7s ease;}
-#Content > *{display:flex;align-items:center;text-align:center;justify-content:center;margin-top:1px;}
-.kumpulanstiker > img{display:none;background:rgba(255,255,255, .5);box-shadow: 0 4px 30px rgba(255,255,255, 0.2);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);border: 1px solid rgba(255, 255, 255, 1);border-radius: 50%;padding:10px;width:92px;height:92px;}
-#ftAwal > img{width:130px;height:130px;margin-bottom:50px;}
-#fotostiker{opacity:.1;transition:all .7s ease;transform: scale(.1);}
-#imglewat{margin:30px 0;opacity:0;max-width:520px;height:100px;position:absolute;transition:all 1s ease;}
+#ftAwal img {
+  width: 130px; height: 130px; margin-bottom: 20px;
+}
 
-.halo{text-align:center;font-size:17px !important;position:relative;margin-bottom:20px} 
-.halo.gaya2{font-family:var(--gaya-font2);font-size:24px !important;margin-top:20px !important;}
-.halo.sty3{position:absolute !important;font-size:14px !important;font-weight:400 !important;margin:30px 20px !important;}
+.lovein {
+  background: #fff; border-radius: 50%; width: 50px; height: 50px;
+  padding: 10px; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; animation: pulse 1s infinite alternate;
+}
 
-#fotolove img{transition:all .5s ease;width:75px;height:75px;padding:0;background:none}
-#loveIn img{display:inline-flex;background:none;width:130px;height:130px;transition:all .3s ease;} 
-#ket, #ketgeser, .halo{text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);font-size:17px;font-weight:700;color:white}
-#ket{margin-top:20px !important;font-size:12px;font-weight:400;opacity:.8}
-#ketgeser{position:absolute;margin-top:30px;font-size:10px;font-weight:400;transform:scale(0);opacity:0;transition:all .7s ease;}
+@keyframes pulse { from { transform: scale(1); } to { transform: scale(1.1); } }
 
-@keyframes leaves {0% {transform: scale(1.0);} 100% {transform: scale(.85);}}
-#loveIn{animation: leaves .7s ease-in-out infinite alternate;-webkit-animation: leaves 1s ease-in-out infinite alternate;} 
-.lovein{background:#fff;border-radius:50%;width:40px;height:40px;padding:10px;font-size:30px;display:flex;align-items:center;text-align:center;justify-content:center;transition:all .3s ease;}
-.lovein:hover{cursor:pointer}
-.lovein svg{stroke:#ff0000;stroke-width:1.3;fill:none;width:35px;height:35px}
+#pergeseran {
+  display: none; width: 100%; max-width: 400px;
+  margin-top: 20px;
+}
 
-.swal2-modal > *{font-family:var(--gaya-font);font-size:16px;color:white}
-.swal2-title{line-height:1.3em;font-size:17px;text-align:center;padding:15px 30px 0 30px;}
-.swal2-timer-progress-bar-container > *{opacity:.7;background:#00B6FF;margin:0 2px}
-.swal2-modal{background: rgba(0,0,0, .6);backdrop-filter: blur(3px);-webkit-backdrop-filter: blur(3px);box-shadow: 0 4px 30px rgba(255,255,255, 0.3);border: 1px solid rgba(255, 255, 255, 0.3);border-radius: 14px;max-width:280px;top:-60px;}
-.swal2-image{background: rgba(255, 255, 255, 0.5);box-shadow: 0 4px 30px rgba(255,255,255, 0.3);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);border: 1px solid rgba(255, 255, 255, 0.3);border-radius: 50%;padding:10px;}
-.swal2-styled.swal2-confirm, .swal2-styled.swal2-cancel{position: relative;background-color: #4839eb;color: #fff;font-size:14px;border:1px solid #ffffff59;border-radius:4px;z-index: 1;transition: all 0.2s;}
+#pergeseran p {
+  background: rgba(0, 0, 0, .5); border-left: 2px solid #fff; border-right: 2px solid #fff;
+  padding: 20px; color: white; text-align: center; border-radius: 15px;
+  display: none; animation: rts .5s ease;
+}
 
-.fa-heart {opacity:.3;color:white;font-size: 20px;position: absolute;animation:  heartMove linear 1;top: -10vh;z-index: 0;}
-@keyframes heartMove {0%{transform: translateY(-10vh) ;} 100%{transform: translateY(100vh) ;}}
-.sembunyi, #pesanditolak > *, #kado2, #kado3, .kumpulanwp > *{display:none !important}
+#pergeseran p b img { 
+  width: 180px; height: 180px; 
+  margin-bottom: 15px; 
+  object-fit: cover; 
+  border-radius: 15px; 
+  border: 2px solid #fff;
+}
+
+#pergeseran p b img.stiker {
+  width: 80px; height: 80px; border: none; border-radius: 0;
+}
+
+/* Gaya Angka Usia */
+.angka-usia {
+  font-family: var(--gaya-font2);
+  font-size: 55px;
+  color: #ffeb3b;
+  text-shadow: 2px 2px 10px rgba(0,0,0,.5);
+  display: block;
+  margin-top: 10px;
+}
+
+#Tombol {
+  margin-top: 20px; display: none; opacity: 0;
+  transition: all .5s ease;
+}
+
+#Tombol a {
+  cursor: pointer; padding: 12px 25px; background: rgba(255,255,255,0.2);
+  color: white; border: 1px solid #fff; border-radius: 20px;
+  backdrop-filter: blur(2px);
+}
+
+blockquote {
+  display: none; text-align: center; color: white;
+  padding: 20px; border-radius: 15px;
+}
+
+#teksnim { font-family: var(--gaya-font2); font-size: 26px; font-weight: 700; margin-bottom: 15px; }
+
+.fa-heart {
+  position: fixed; color: #ff0000; opacity: 0.5;
+  animation: heartMove linear forwards; z-index: 100;
+}
+
+@keyframes heartMove {
+  0% { transform: translateY(-10vh) rotate(0deg); }
+  100% { transform: translateY(110vh) rotate(360deg); }
+}
+
+@keyframes rts { from { transform: scale(.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 </style>
+</head>
 <body>
-	
-   <!-- Ganti Audio di sini -->
-   <audio src="https://feeldreams.github.io/audio/anditsnot.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <audio src="https://feeldreams.github.io/audio/anditsnot.mp3" id="linkmp3"></audio>
    
    <div id="bodyblur">
-     <!-- Wallpaper / Background --><img src="https://feeldreams.github.io/pics/awan3.jpg" id="wallpaper"/>
+     <img src="https://feeldreams.github.io/pics/awan3.jpg" id="wallpaper"/>
    </div>
    
    <div id='Content'>
 
      <div id="ftAwal">
-       <!-- Stiker Pembuka -->
        <img src="https://feeldreams.github.io/pandaputih.gif" id="ftoAwal"/>
      </div>
 
-     <div id="loveIn">
-       <!-- Tombol LOVE -->
-       <a href="https://www.feeldream.id/2023/01/script-feeldream.html?m=1#hbd" target="_blank" class='lovein'><svg class='line' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g transform='translate(2.550170, 3.550158)'><path d='M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z'></path><path d='M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842'></path></g></svg></a>
+     <div id="loveIn" onclick="mulai()">
+       <div class='lovein'>
+         <svg viewBox="0 0 24 24" width="30" height="30" fill="red"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+       </div>
      </div>
-     <p id="ket">Sentuh LOVEnya!</p>
-	   <h3 style="color: white;">13 April 2026</h3>
+     <p id="ket" style="color: white; margin-top: 15px;">Sentuh LOVEnya!</p>
 
-     <div class="kumpulanstiker">
-         <!-- Stiker untuk Konten -->
-         <img src="https://feeldreams.github.io/cilukba.gif" id="fotostiker"/>
-         <img src="https://feeldreams.github.io/pandaputih.gif" id="fotostikerPopup"/>
-         <img src="https://feeldreams.github.io/weee.gif" id="fotostikerPopupCon"/>
-         <img src="https://feeldreams.github.io/ngumpet.gif" id="fotostikerPopupCan"/>
+     <div id='pergeseran'>
+        
+        <p id="p1"><b>
+          <img src="lutuu.jpg"/><br> <span>Hai Ayaaa sayanggg 🤭❤️</span>
+        </b></p>
+
+        <p id="p2"><b>
+          <img src="WhatsApp Image 2025-12-30 at 17.02.14.jpg"/><br> <span>Selamat Ulang Tahun ya! ✨</span>
+        </b></p>
+
+        <p id="p3"><b>
+          <img class="stiker" src="https://feeldreams.github.io/g5.gif"/><br>
+          <span>Semoga di hari spesial ini... ✨</span>
+        </b></p>
+
+        <p id="p4"><b>
+          <img class="stiker" src="https://feeldreams.github.io/mndkat.gif"/><br>
+          <span>Ayaa selalu sehat dan<br>bahagia terusss 🥰</span>
+        </b></p>
+
+        <p id="p5"><b>
+          <img class="stiker" src="https://feeldreams.github.io/cilukba.gif"/><br>
+          <span>Tetap jadi Ayaa yang baik,<br>ceria, dan gemesin yaa! 😋❤️</span>
+        </b></p>
+
+        <p id="p6"><b>
+          <img src="1.jpeg"/><br> <span>I'm so lucky to have you! 💐✨</span>
+        </b></p>
+
+        <p id="p7"><b>
+          <img class="stiker" src="https://feeldreams.github.io/gumush.gif"/><br>
+          <span>Yeay! Sekarang usiamu sudah:</span>
+          <span class="angka-usia">19</span> </b></p>
+
      </div>
-     
-     <div><div id='pergeseran'>
-     	
-<!-- Pesan -->
-<p><b><img style="border-radius: 20px; object-fit: cover;" src="./lutuu.jpg"/><br>
-	<span>Hai sayang 🤭❤️</span>
-</b></p>
 
-<p><b><img src="https://feeldreams.github.io/pusn.gif"/><br>
-	<span>Aku Cuma Mau<br>Bilang Nih 😆</span>
-</b></p>
-
-<p><b><img src="https://feeldreams.github.io/cilukba.gif"/><br>
-	<span>Ciyee yang Hari Ini Ultah 😜</span>
-</b></p>
-
-<p><b><img src="https://feeldreams.github.io/g5.gif"/><br>
-	<span class="ft">Selamat Ulang Tahun! 🥳</span>
-</b></p>
-
-<p><b><img src="https://feeldreams.github.io/mndkat.gif"/><br>
-	<span>Panjang Umur dan<br>Sehat Selalu yaa 🥰</span>
-</b></p>
-
-     </div></div>
-     
-     <!-- Edit Pesan Akhir di Sini -->
-     <div><blockquote id='bq'>
+     <blockquote id='bq'>
        <p id="teksnim">Happy Level Up Day! 🥳</p>
-       <p id="kalimat"><span id="klganti">Canda yaa hehe 🤣<br><br></span>Intinya semoga di hari bertambahnya<br>usia Ayaa ini, Ayaa bisa menjadi<br>pribadi yang lebih baik lagi yaa.. 🥳<br><br><span class="ft">Wish You All The Best ✨</span></p>
-     </blockquote></div>
-     
-     <!--<p id="ketgeser">Klik untuk Geser!</p>-->
+       <p id="kalimat"></p>
+     </blockquote>
+
      <div id="Tombol">
-       <a onClick="multifungsi()">
-         <b id="tmbl">Geser &#128073;</b>
-       </a>
+       <a onClick="multifungsi()" id="tmbl">Lanjut 👉</a>
      </div>
      
    </div>
 
 <script>
-const body = document.querySelector("body"); const iniwp = [];iden = 1; const swals = Swal.mixin({timer: 99999, allowOutsideClick: false, showConfirmButton: true, timerProgressBar: false, imageHeight: 90,}); audio = new Audio('' + linkmp3.src); ftganti=0;fungsi=0;fungsiAwal=0;deffotostiker=fotostiker.src;
-function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);Content.style = "opacity:1;margin-top:14vh"; 
+const body = document.querySelector("body");
+const swals = Swal.mixin({timer: 99999, allowOutsideClick: false, showConfirmButton: true, timerProgressBar: false, imageHeight: 90,}); 
+const audio = document.getElementById("linkmp3");
+let slideSaatIni = 1;
+const totalSlide = 7; // Total slide sekarang ada 7
 
-const box = document.getElementById('pergeseran');
-const totalSlide = box.children.length;
-console.log('Total Slide: ', totalSlide);
-totalPesan = totalSlide;
-
-console.log(hours + "." + minutes + " WIB - " + day + ", " + dateNum + " " + month + " " + year);
-// Dapatkan elemen yang ingin ditambahkan watermark
-var element = document.getElementById("Content");
-
-// Buat elemen baru untuk menampung watermark
-var watermark = document.createElement("div");
-
-// Setel teks watermark dan propertinya
-watermark.textContent = day + ", " + dateNum + " " + month + " " + year;
-watermark.style = "color:white;opacity:.5;font-size:10px;position:fixed;bottom:25px;left:25px;z-index:2";
-
-// Tambahkan elemen watermark ke dalam elemen utama
-element.appendChild(watermark);
-
-//////////////////////////////////////////////////
-
-  var sudahklik = false;
-  sudahklik = true;
-      	loveIn.innerHTML = "<label class='lovein'><svg class='line' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g transform='translate(2.550170, 3.550158)'><path d='M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z'></path><path d='M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842'></path></g></svg></label>";
-  document.getElementById("loveIn").onclick = function() {
-      if(sudahklik == true && fungsiAwal==0){
-        loveIn.style="transition:all .5s ease;opacity:0";
-        ftAwal.style="transition:all .5s ease;opacity:0";
-        ket.style="transition:all .5s ease;opacity:0";
-        fungsiAwal=1;setTimeout(initengahan,300);
-      } else {
-      	
-      }
-    }
-  
-  function initengahan(){
-    ftAwal.style="display:none";loveIn.style="display:none";ket.style="display:none";
-    Content.style = "opacity:1;margin-top:10vh";
-    setTimeout(inipesan,200);audio.play();
-  }
-  
-aktigeser=0;thisgeser=1;
-document.getElementById("bodyblur").onclick = function() {multifungsi()}
-
-function multifungsi(){
-  if(aktigeser==1){
-    if(thisgeser==totalPesan){aksiakhir()}
-    document.getElementById('pergeseran').scrollLeft += 300;
-    hsementara();
-    //ftganti++;
-    //fthilang();
-  }
-  if(thisgeser==100){Tombol.style="";setTimeout(aksibalas,150);}
+function berjatuhan() {
+  const heart = document.createElement("div"); 
+  heart.className = "fas fa-heart"; 
+  heart.style.left = (Math.random() * 90) + "vw"; 
+  heart.style.animationDuration = (Math.random() * 3) + 2 + "s"; 
+  body.appendChild(heart);
+  setTimeout(() => { heart.remove(); }, 5000);
 }
 
-  async function inipesan(){nama = "Kamu";window.nama = nama;mulainama();}  
+function mulai() {
+  audio.play();
+  document.getElementById("loveIn").style.display = "none";
+  document.getElementById("ftAwal").style.display = "none";
+  document.getElementById("ket").style.display = "none";
+  document.getElementById("Content").style.opacity = "1";
+  document.getElementById("Content").style.marginTop = "7vh";
   
-  async function mulainama() {
-    setTimeout(pgmuncul,200);
-    //ftmuncul();
-  }
+  document.getElementById("pergeseran").style.display = "block";
+  tampilkanSlide(1);
+}
 
-  function hsementara(){
-    //ketgeser.style="position:relative;";
-    Tombol.style="";
-    thisgeser+=1;aktigeser=0;setTimeout(munculkembali,500)
+function tampilkanSlide(n) {
+  for (let i = 1; i <= totalSlide; i++) {
+    document.getElementById("p" + i).style.display = "none";
   }
-  function munculkembali(){
-    if(thisgeser<=totalPesan){
-      //ketgeser.style="position:relative;transform:scale(1);opacity:.7";
-      Tombol.style="opacity:1;transform: scale(1)";
-      aktigeser=1;
+  document.getElementById("p" + n).style.display = "block";
+  document.getElementById("Tombol").style.display = "flex";
+  document.getElementById("Tombol").style.opacity = "1";
+}
+
+function multifungsi() {
+  if (slideSaatIni < totalSlide) {
+    slideSaatIni++;
+    tampilkanSlide(slideSaatIni);
+    if (slideSaatIni === totalSlide) {
+      document.getElementById("tmbl").innerHTML = "13 April 2026 💌";
     }
-    if(thisgeser==50){tmbl.innerHTML = "💌 Balas";Tombol.style="opacity:1;transform: scale(1)";thisgeser=100;}
-    //if(thisgeser==totalPesan){aksiakhir();thisgeser=50}
+  } else {
+    aksibalas();
+  }
+}
+
+async function aksibalas() {
+  document.getElementById("pergeseran").style.display = "none";
+  document.getElementById("Tombol").style.display = "none";
+  
+  const { isConfirmed: mau } = await swals.fire({
+    title: 'Mau Kado Gak Nih? 🤭❤️',
+    imageUrl: 'https://feeldreams.github.io/pandaputih.gif',
+    showCancelButton: true,
+    confirmButtonText: 'Mau!',
+    cancelButtonText: 'Enggak',
+  });
+
+  if (mau) {
+    await swals.fire({
+      title: 'Tapi Boong! 🤣',
+      text: 'Gajadi ngasih kado ah, soalnya kamu bau 😜❤️',
+      imageUrl: 'https://feeldreams.github.io/weee.gif',
+    });
+  } else {
+    await swals.fire({
+      title: 'Yaudah!',
+      text: 'Beneran gamau ya? Okedeh 😜❤️',
+      imageUrl: 'https://feeldreams.github.io/ngumpet.gif',
+    });
   }
   
-  function aksiakhir(){
-  	   pergeseran.style="position:relative;";
-         //ketgeser.style="position:relative";
-         Tombol.style="";
-         setTimeout(aksibalas,500);
-  }
-  
-  function kalimatakhir(){
-  	new TypeIt("#kalimat", {
-      strings: ["" + katakata], startDelay: 50, speed: 54, cursor: true,
-      afterComplete: function(){
-      	kalimat.innerHTML = katakata;
-          setTimeout(munculteksnim,300);
-          //tmbl.innerHTML = "💌 Balas";thisgeser=100;
-          //Tombol.style="opacity:1;transform: scale(1)";
-      },}).go();
-  }
-  function munculteksnim(){
-    klganti.style="display:none";
-    teksnim.style="position:relative;opacity:1;transform:scale(1);";
-    setTimeout(jjteksnim,550);
-    setInterval(berjatuhan,250);
-  }
-  function jjteksnim(){teksnim.style.animation="rto .8s infinite alternate";}
-  
-  function ftmuncul(){
-    if(ftganti==0){fotostiker.src = deffotostiker;}
-    if(ftganti==1){fotostiker.src = fotostiker1.src;}
-    if(ftganti==2){fotostiker.src = fotostiker2.src;}
-    if(ftganti==3){fotostiker.src = fotostiker3.src;}
-    if(ftganti<=10){fotostiker.style="display:inline-flex;opacity:1;transform:scale(1)";}
-  }
-  function fthilang(){fotostiker.style="display:inline-flex;opacity:0;transform:scale(0)";if(ftganti<10){setTimeout(ftmuncul,250)}}
-  function jjfoto(){fotostiker.style.animation="rto .8s infinite alternate";}
-  
-  function pgmuncul(){pergeseran.style="position:relative;opacity:1;transform:scale(1);";setTimeout(munculkembali,500)}
-  function bqmuncul(){
-    if(poinjwb==1){
-      katakata = kalimat.innerHTML;kalimat.innerHTML = "";
-    }else{
-      klganti.innerHTML="Udah ah segitu aja 🤣<br><br>";katakata = kalimat.innerHTML;kalimat.innerHTML = "";
+  bqmuncul();
+}
+
+function bqmuncul() {
+  document.getElementById("bq").style.display = "block";
+  new TypeIt("#kalimat", {
+    strings: ["Intinya semoga di hari bertambahnya usia Ayaa ini, Ayaa bisa menjadi pribadi yang lebih baik lagi yaa.. 🥳<br><br><b>Wish You All The Best ✨</b>"],
+    startDelay: 500,
+    speed: 50,
+    cursor: true,
+    afterComplete: function() {
+      setInterval(berjatuhan, 300);
     }
-    Content.style = "opacity:1;margin-top:8vh";fotostiker.style="display:none";pergeseran.style="display:none";Tombol.style="";bq.style = "position:relative;opacity:1;visibility:visible;margin-top:5vh;transform: scale(1);";
-    setTimeout(kalimatakhir,200);ftganti=0;fthilang();
-  }
-  function bqhilang(){wallpaper.style="transform: scale(2);";bodyblur.style="opacity:.3";bq.style = "position:relative;transition:all .7s ease;";}
-  
-  tompositif = "Mau";
-  tomnegatif = "Gamau";
-  async function aksibalas(){
-    var { isConfirmed: prtanya } = await swals.fire({
-      title: nama + ' Mau Kado Gak Nih? 🤭❤️',
-      imageUrl: '' + fotostikerPopup.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif,});
-    if(prtanya){
-       await swals.fire({
-         title: 'Tapi Boong! 🤣', 
-         html: 'Gajadi ngasih kado ah<br>soalnya sayangggg bau 😜❤️', 
-         imageUrl: '' + fotostikerPopupCon.src,
-       });
-       poinjwb=1;
-    } else {
-	     await swals.fire({
-         title: 'Yaaahh!', 
-         html: 'Yaudah kalo gamau 😜❤️', 
-         imageUrl: '' + fotostikerPopupCan.src,
-       });
-       poinjwb=2;
-    }
-    bqmuncul();
-    }
+  }).go();
+}
+
+window.onload = () => {
+  document.getElementById("Content").style.opacity = "1";
+};
 </script>
-<!-- Sampai Sini -->
 </body>
 </html>
